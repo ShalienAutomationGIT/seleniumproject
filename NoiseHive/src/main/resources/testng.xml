@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NoiseHive Application Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+
+	<test name="NoiseHive App Test Cases">
+		<classes>
+			<class name="com.qa.testcases.DashboardPageTest"></class>
+			<class name="com.qa.testcases.AboutPageTest"></class>
+			<class name="com.qa.testcases.NewsFeedPageTest"></class>
+			<class name="com.qa.testcases.ContactPageTest"></class>
+
+		</classes>
+	</test>
+</suite>

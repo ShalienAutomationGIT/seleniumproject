@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NoiseHive Application Test Automation Test Suite]">
+  <test thread-count="5" name="NoiseHive App Test Cases(failed)">
+    <classes>
+      <class name="com.qa.testcases.DashboardPageTest">
+        <methods>
+          <include name="testDashboardTitle"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.DashboardPageTest -->
+      <class name="com.qa.testcases.AboutPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="verifyAboutText"/>
+        </methods>
+      </class> <!-- com.qa.testcases.AboutPageTest -->
+      <class name="com.qa.testcases.NewsFeedPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyNewsFeedText"/>
+        </methods>
+      </class> <!-- com.qa.testcases.NewsFeedPageTest -->
+    </classes>
+  </test> <!-- NoiseHive App Test Cases(failed) -->
+</suite> <!-- Failed suite [NoiseHive Application Test Automation Test Suite] -->
