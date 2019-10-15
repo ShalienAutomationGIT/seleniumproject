@@ -157,11 +157,17 @@ public class DashboardPage extends Base {
 		 js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	 }
 	 
+
 	 
 	 public QAPage clickOnQALink()
 	 {
 		 QALink.click();
 		 return new QAPage();
+	 }	 
+	 
+	 public void printGITmessage()
+	 {
+		 System.out.println("This is new modification done for git");
 	 }
 	
 	
