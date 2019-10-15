@@ -73,11 +73,11 @@ public class DashboardPageTest extends Base {
 		  dashboard.printGITmessage();
 	  }
 		
-//	  @Test(priority=6) 
-//	  public void clickAboutLink() 
-//	  {
-//		dashboard.clickOnAboutLink(); 
-//	  }		
+	  @Test(priority=7) 
+	  public void clickAboutLink() 
+	  {
+		dashboard.clickOnAboutLink(); 
+	  }		
 	  
 	
 	  @AfterMethod() 
