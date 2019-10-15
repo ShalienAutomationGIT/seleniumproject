@@ -60,20 +60,25 @@ public class DashboardPageTest extends Base {
 	  { 
 		  dashboard.testDashboardHeaders(); 
 	  }
-	  	   
-	
+	  	   	
 	  @Test(priority=5)
 	  public void getAllDashboardPageLinks()
 	  {
 		dashboard.getAllLinks();
 	  }
-		
-	  @Test(priority=6) 
-	  public void clickAboutLink() 
+	  
+	  @Test(priority=6)
+	  public void testGITMessage()
 	  {
-		dashboard.clickOnAboutLink(); 
-	  }		
-	
+		  dashboard.printGITmessage();
+	  }
+		
+//	  @Test(priority=6) 
+//	  public void clickAboutLink() 
+//	  {
+//		dashboard.clickOnAboutLink(); 
+//	  }		
+	  
 	
 	  @AfterMethod() 
 	  public void teardown() 
