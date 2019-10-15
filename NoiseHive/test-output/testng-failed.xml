@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.testcases.AboutPageTest">
+      <class name="com.qa.testcases.DashboardPageTest">
         <methods>
+          <include name="testGITMessage"/>
+          <include name="testNoiseHiveLogo"/>
+          <include name="verifyDashboardText"/>
+          <include name="testDashboardTitle"/>
+          <include name="testalldashboardheaders"/>
           <include name="teardown"/>
           <include name="setUp"/>
-          <include name="checkFlashatBtn"/>
+          <include name="clickAboutLink"/>
+          <include name="getAllDashboardPageLinks"/>
         </methods>
-      </class> <!-- com.qa.testcases.AboutPageTest -->
+      </class> <!-- com.qa.testcases.DashboardPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
