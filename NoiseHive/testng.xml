@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.qa.testcases.DashboardPageTest"/>
-      <!-- <class name="com.qa.testcases.AboutPageTest"/>
-      <class name="com.qa.testcases.QAPageTest"/>
+      <class name="com.qa.testcases.AboutPageTest"/>
+      <!-- <class name="com.qa.testcases.QAPageTest"/>
       <class name="com.qa.testcases.ContactPageTest"/>
       <class name="com.qa.testcases.NewsFeedPageTest"/>
       <class name="com.qa.pages.test.DashboardPage"/> -->
