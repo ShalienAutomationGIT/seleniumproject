@@ -82,7 +82,7 @@ public class Base {
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:/Users/abc/Desktop/JAR files/Browsers/chromedriver.exe");
 			driver = new ChromeDriver();
-		} else if (browserName.equals("FF")) {
+		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "C:/Users/abc/Desktop/JAR files/Browsers/geckodriver");
 			driver = new FirefoxDriver();
 		
