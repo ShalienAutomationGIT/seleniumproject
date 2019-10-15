@@ -15,8 +15,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.ie.*;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -79,9 +81,15 @@ public class Base {
 	public static void initialization() {
 		String browserName = CONFIG.getProperty("browser");
 
-		if (browserName.equals("chrome")) {
+		if (browserName.equals("chrome")) {			
+			
+					
 			System.setProperty("webdriver.chrome.driver", "C:/Users/abc/Desktop/JAR files/Browsers/chromedriver.exe");
-			driver = new ChromeDriver();
+			//Syntax to run in chrome incognito mode
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--incognito");
+			driver = new ChromeDriver(options);
+			
 		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "C:/Users/abc/Desktop/JAR files/Browsers/geckodriver");
 			driver = new FirefoxDriver();
